@@ -4,7 +4,9 @@ import auth from "../types/authType";
 
 
 const initialState: auth = {
-    hasStarted : false
+    hasStarted : false,
+    name : "",
+    limit : 10,
 }
 
 
@@ -17,10 +19,15 @@ const authSlice = createSlice({
         },
         authEnd : (state) => {
             state.hasStarted = false;
+        },
+
+        addName : (state , actions) => {
+            state.name = actions.payload;
         }
+
     }
 })
 
-export const { authStart, authEnd } = authSlice.actions;
+export const { authStart, authEnd , addName} = authSlice.actions;
 
 export default authSlice.reducer

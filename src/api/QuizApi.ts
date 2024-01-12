@@ -10,11 +10,6 @@ class Quiz {
     getLimit() :number {
         return this.limit;
     }
-
-    private getQuestions() :QuizType[] {
         
-    }
-
-    
 
 }
