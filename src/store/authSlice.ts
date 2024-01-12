@@ -1,10 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import auth from "../types/authType";
 
-interface auth{
-    hasStarted : boolean;
-}
 
-const initialState : auth = {
+
+const initialState: auth = {
     hasStarted : false
 }
 

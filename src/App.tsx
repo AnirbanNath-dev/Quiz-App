@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Protected Component={Start}/>}/>
+      <Route path="/" element={<Start/>}/>
     </Routes>
   )
 }
