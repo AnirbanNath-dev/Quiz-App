@@ -3,6 +3,7 @@ import logo from '../assets/quiz-logo-in-comic-style-brainy-game-vector-36246215
 
 function Start() {
   return (
+    
     <div className='w-screen p-10 flex justify-center items-center'>
     <div className='w-fit flex items-center p-10 flex-col gap-10'>
       <img src={logo} alt="Quiz logo"/>
