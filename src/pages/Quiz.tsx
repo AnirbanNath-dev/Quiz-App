@@ -2,7 +2,11 @@ import React from 'react'
 
 function Quiz() {
   return (
-    <div>Quiz</div>
+    <div className='w-screen h-screen flex justify-center items-center'>
+
+      
+
+    </div>
   )
 }
 

@@ -13,7 +13,7 @@ function Victory({ name } : { name: string}) {
     <div className='w-screen p-10 flex justify-center items-center'>
     <div className='w-fit flex items-center p-10 flex-col gap-16'>
       <img src={logo} alt="Quiz logo" className='h-64'/>
-      <span className='text-3xl tracking-wider '>🥳 {name} won the quiz 🥳</span>
+      <span className='text-3xl tracking-wider '>🥳 Congratulations {name} , You won the quiz 🥳</span>
       <Button clickEvent={handleClick} text='Play Again'/>
 
     </div>

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Victory name="Anirban"/>}/>
+      <Route path="/" element={<Start/>}/>
       <Route path="/quiz/:id" element={<Protected Component={Quiz}/>}/>
     </Routes>
   )
