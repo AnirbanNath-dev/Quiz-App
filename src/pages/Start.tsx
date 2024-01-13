@@ -1,13 +1,13 @@
-import { useDispatch } from 'react-redux'
+
 import logo from '../assets/quiz-logo-in-comic-style-brainy-game-vector-36246215-removebg-preview.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Button from '../components/Button'
 
 
 function Start() {
   const [name , setName] = useState<string>("")
   const navigate = useNavigate()
-  // const dispatch = useDispatch()
 
   const handleClick = () : void => {
     if( name.trim().length !== 0 ) {
@@ -35,7 +35,7 @@ function Start() {
         <option value="30">30 Questions</option>
       </select>
 
-      <button onClick={handleClick} className='border-2 border-black w-full py-3 px-5 text-2xl rounded-full bg-black text-white hover:text-black hover:bg-white transition-all duration-500 active:scale-90'>Join</button>
+      <Button clickEvent={handleClick} text='Start'/>
       {
         name.trim().length == 0 && (
           <span className='text-red-600'>* Name is required</span>
