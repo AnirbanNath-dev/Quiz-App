@@ -11,6 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Start/>}/>
       <Route path="/quiz/:id" element={<Protected Component={Quiz}/>}/>
+      <Route path="/test" element={<Quiz/>}/>
     </Routes>
   )
 }

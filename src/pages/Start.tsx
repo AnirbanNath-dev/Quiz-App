@@ -10,7 +10,7 @@ function Start() {
   const navigate = useNavigate()
 
   const handleClick = () : void => {
-    if( name.trim().length !== 0 ) {
+    if( name.trim().length !== 0) {
         navigate("/quiz")
     }
   }
@@ -20,8 +20,8 @@ function Start() {
     <div className='w-screen p-10 flex justify-center items-center'>
     <div className='w-fit flex items-center p-10 flex-col gap-10'>
       <img src={logo} alt="Quiz logo"/>
-      <input 
-      type="text" 
+      <input
+      type="text"
       className='border-2 border-black rounded-full py-3 px-5 tracking-tight text-2xl w-full' 
       placeholder='Enter your name...'
       onChange={(e)=> setName(e.target.value)}
