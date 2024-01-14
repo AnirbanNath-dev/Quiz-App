@@ -1,4 +1,4 @@
-export const FetchData = async  (url : string , ) =>{
+export const FetchData= async <T>(url : string , ): Promise<T>=>{
 
     try {
         

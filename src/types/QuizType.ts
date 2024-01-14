@@ -1,9 +1,8 @@
 interface QuizType {
+    category : string;
     question : string;
-    answers : unknown[] ;
     correct_answer : string;
-    difficulty : string;
-
+    options : string[];
 }
 
 export default QuizType
