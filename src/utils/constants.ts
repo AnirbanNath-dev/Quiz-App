@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import auth from "../types/authType";
+import auth from "../models/authType.model";
 
 const limit = useSelector<auth>(state =>  state.limit)
 

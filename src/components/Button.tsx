@@ -1,11 +1,7 @@
 import React from 'react'
 
-interface eventProp {
-    clickEvent : React.MouseEventHandler,
-    text: string,
-}
 
-function Button({clickEvent , text} : eventProp) {
+function Button({clickEvent , text} : {clickEvent : React.MouseEventHandler , text : string}) {
   return (
     <button 
     onClick={clickEvent} 

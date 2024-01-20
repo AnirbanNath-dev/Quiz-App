@@ -1,5 +1,5 @@
-import QuizAPIType from "../types/QuizAPIType";
-import QuizType from "../types/QuizType";
+import QuizAPIType from "../models/QuizAPIType.model";
+import QuizType from "../models/QuizType.model";
 import api from "../utils/constants";
 import { FetchData } from "./FetchData";
 

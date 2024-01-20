@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import auth from "../types/authType";
+import auth from "../models/authType.model";
 
 
 
 const initialState: auth = {
-    hasStarted : false,
+    hasStarted : true,
     name : "",
     limit : 10,
 }

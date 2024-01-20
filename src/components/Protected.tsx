@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import auth from '../types/authType'
+import auth from '../models/authType.model'
 import Start from '../pages/Start'
 import { useNavigate } from 'react-router-dom'
 
